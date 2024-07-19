@@ -1,26 +1,34 @@
 function updateTime() {
-  // Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  let JoziElement = document.querySelector("#Jozi");
+  if (JoziElement) {
+    let JoziDateElement = JoziElement.querySelector(".date");
+    let JoziTimeElement = JoziElement.querySelector(".time");
+    let JoziTime = moment().tz("Africa/Johannesburg");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    JoziDateElement.innerHTML = JoziTime.format("MMMM	Do YYYY");
+    JoziTimeElement.innerHTML = JoziTime.format("h:mm:ss [<small>]A[</small>]");
+  }
+
+  let MthathaElement = document.querySelector("#Mthatha");
+  if (MthathaElement) {
+    let MthathaDateElement = MthathaElement.querySelector(".date");
+    let MthathaTimeElement = MthathaElement.querySelector(".time");
+    let MthathaTime = moment().tz("Africa/Mthatha");
+
+    MthathaDateElement.innerHTML = MthathaTime.format("MMMM	Do YYYY");
+    MthathaTimeElement.innerHTML = MthathaTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  // Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  let KumasiElement = document.querySelector("#Kumasi");
+  if (KumasiElement) {
+    let KumasiDateElement = KumasiElement.querySelector(".date");
+    let KumasiTimeElement = KumasiElement.querySelector(".time");
+    let KumasiTime = moment().tz("Africa/Kumasi");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    KumasiDateElement.innerHTML = KumasiTime.format("MMMM	Do YYYY");
+    KumasiTimeElement.innerHTML = KumasiTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
