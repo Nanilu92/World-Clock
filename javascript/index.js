@@ -9,26 +9,26 @@ function updateTime() {
     JoziTimeElement.innerHTML = JoziTime.format("h:mm:ss [<small>]A[</small>]");
   }
 
-  let MthathaElement = document.querySelector("#Mthatha");
-  if (MthathaElement) {
-    let MthathaDateElement = MthathaElement.querySelector(".date");
-    let MthathaTimeElement = MthathaElement.querySelector(".time");
-    let MthathaTime = moment().tz("Africa/Mthatha");
+  let losAngelesElement = document.querySelector("#los-angeles");
+  if (losAngelesElement) {
+    let losAngelesDateElement = losAngelesElement.querySelector(".date");
+    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
+    let losAngelesTime = moment().tz("America/Los_Angeles");
 
-    MthathaDateElement.innerHTML = MthathaTime.format("MMMM	Do YYYY");
-    MthathaTimeElement.innerHTML = MthathaTime.format(
+    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
+    losAngelesTimeElement.innerHTML = losAngelesTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  let KumasiElement = document.querySelector("#Kumasi");
-  if (KumasiElement) {
-    let KumasiDateElement = KumasiElement.querySelector(".date");
-    let KumasiTimeElement = KumasiElement.querySelector(".time");
-    let KumasiTime = moment().tz("Africa/Kumasi");
+  let parisElement = document.querySelector("#paris");
+  if (parisElement) {
+    let parisDateElement = parisElement.querySelector(".date");
+    let parisTimeElement = parisElement.querySelector(".time");
+    let parisTime = moment().tz("Europe/Paris");
 
-    KumasiDateElement.innerHTML = KumasiTime.format("MMMM	Do YYYY");
-    KumasiTimeElement.innerHTML = KumasiTime.format(
+    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
+    parisTimeElement.innerHTML = parisTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }

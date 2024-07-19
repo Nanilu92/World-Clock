@@ -57,7 +57,9 @@ select {
   vertical-align: middle;
   line-height: 48px;
 }
-
+strong {
+  color: blueviolet;
+}
 footer {
   text-align: center;
   font-size: 18px;
